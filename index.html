@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="/assets/images/pattern-lines.svg" alt="">
+  <img src="/assets/images/pattern-squiggly-line-bottom-desktop.svg" alt="" class="bottom-D">
+  <img src="/assets/images/pattern-squiggly-line-top.svg" alt="" class="top">
+  <div class="main">
+    <img src="/assets/images/logo-full.svg" alt="">
+    <h1 style="text-align: center;">Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p class="secure">Secure your spot at next year's biggest coding conference.</p>
+    <form action="">
+      <p class="upload-ava">Upload avatar</p>
+      <div class="upload">
+        <label for="avatar" class="upload-label">
+            <img src="assets/images/icon-upload.svg" alt="Upload Icon" />
+        </label>
+        <input type="file" name="avatar" id="avatar" accept="image/*" style="display: none;" required/>
+        <p>Drag and drop or click to upload</p>
+        <div class="btn">
+          <button type="button" class="remove">Remove Image</button>
+          <button type="button" class="change">Change Image</button>
+        </div>
+      </div>
+      <p class="note">Upload your photo (JPG or PNG, max size: 500KB) </p>
+      <div class="username">
+        <label for="userName">Full Name</label>
+        <input type="text" id="userName" name="userName" required>
+      </div>
+      <div class="email">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" size="500KB" required>
+        <p class="email-valid"></p>
+      </div>
+      <div class="github">
+        <label for="github">Github</label>
+        <input type="text" id="github" name="github" placeholder="@your Username" required>
+      </div>
+      <div class="submit">
+        <button type="submit">Generate My Ticket</button>
+      </div>
+    </form>
+  
+  </div>
+  <div class="final">
+    <img src="/assets/images/logo-full.svg" alt="">
+    <h1 class="final-h1"></h1>
+    <p class="final-p"></p>
+    <div class="ticket">
+      
+      <div class="upper">
+        <img src="/assets/images/logo-full.svg" alt="">
+        <p>Jan 31, 2025 / Austin, TX</p>
+      </div>
+      <div class="lower">
+        <img src="" alt="">
+        <div class="text">
+          <h3></h3>
+          <div class="gitlink">
+            <img src="assets/images/icon-github.svg" alt="">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
